@@ -45,7 +45,7 @@ $(document).ready(function() {
 		$("#logo").css("width", (NavWidth / 4) + "px");
 	} else {
 		$("#logo").css("margin-top", "-10px");
-		$("#logo").css("width", (NavWidth / 2) + "px");
+		$("#logo").css("width", (NavWidth / 3) + "px");
 	}
 
 	}(jQuery));
