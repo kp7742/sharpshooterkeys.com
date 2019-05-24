@@ -25,7 +25,7 @@ $(document).ready(function() {
 	  })
 	
 	/*----latest news----*/
-	    $("#news-post-slider").owlCarousel({
+	$("#news-post-slider").owlCarousel({
         items : 3,
         itemsDesktop:[1199,2],
         itemsDesktopSmall:[980,2],
@@ -34,6 +34,18 @@ $(document).ready(function() {
         pagination:false,
         autoPlay : true
     });
-				
+	
+	var NavHeight = $("#navbar-main").height();
+	var NavWidth = $("#navbar-main").width();
+	
+	$("#logo").css("height", (NavHeight - 8) + "px");
+	var newHeight = (NavHeight - 8);
+	if(newHeight >= 72){
+		$("#logo").css("margin-top", "-15px");
+		$("#logo").css("width", (NavWidth / 4) + "px");
+	} else {
+		$("#logo").css("margin-top", "-10px");
+		$("#logo").css("width", (NavWidth / 2) + "px");
+	}
 
 	}(jQuery));
