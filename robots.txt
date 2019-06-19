@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /_redirects
+Disallow: /LICENSE
+Disallow: /README.md
+Sitemap: https://sharpshooterkeys.com/sitemap.xml
